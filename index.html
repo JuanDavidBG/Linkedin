@@ -7,39 +7,90 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="img/logo.webp" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet" />
   </head>
   <body>
-   <body>
-    <!--Header-->
-    <header class="header">
-      <!-- contenerdor-logo -->
-      <div class="logo-container">
-        <div class="logo">
-          <div class="logo-img">
-            <img src="img/logo.webp" alt="logo" />
-          </div>
-        </div>
+    <div class="linkedin">
+      <!-- encabezado de linkedin -->
+     <header class="linkedin__header">
+      <div class="header__logo-search">
+          <a href="index.html" class="logo">
+              <img src="img/logo.webp" class="img img-logo" alt="logo">
+          </a>
+          <form action="" class="barra-search">
+              <button class="boton boton--lupa"><i class="ri-search-line"></i></button>
+              <input type="text" placeholder="buscar..." class="search">
+          </form>
       </div>
-      <!-- container busqueda -->
-      <div class="search-container">
-        <form>
-          <input type="text" placeholder="Buscar" />
-          <button class="Search">
-            <i class="ri-search-line"></i>
-          </button>
-        </form>
+      <div class="header__navegate">
+          <nav class="navegate">
+              <ul class="navegate__list">
+                  <li class="list__item">
+                      <a href="" class="icono-span">
+                          <i class="ri-home-2-fill"></i>
+                          <span class="icon-text">home</span>
+                      </a>
+                  </li>
+                  <li class="list__item">
+                      <a href="" class="icono-span">
+                          <i class="ri-group-fill"></i>
+                          <span class="icon-text">mi red</span>
+                      </a>
+                  </li>
+                  <li class="list__item">
+                      <a href="" class="icono-span">
+                          <i class="ri-briefcase-4-fill"></i>
+                          
+                          <span class="icon-text">empleos</span>
+                      </a>
+                  </li>
+                  <li class="list__item">
+                      <a href="" class="icono-span">
+                          <i class="ri-chat-4-fill"></i>
+                          <span class="icon-text">mensajes</span>
+                      </a>
+                  </li>
+                  <li class="list__item">
+                      <a href="" class="icono-span">
+                          <i class="ri-notification-2-fill"></i>
+                          <span class="icon-text">notificaciones</span>
+                      </a>
+                  </li>
+              </ul>
+              <div class="navegate__perfil">
+                  <div class="perfil__icon">
+                      <img src="img/user-1.png" alt="">
+                  </div>
+                  <div class="perfil-menu">
+                      <div class="desplegable">
+                          <div class="ver-info-usuario">
+                              <img src="img/user-1.png" alt="">
+                              <div class="text-user">
+                                  <a href=""></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </nav>
       </div>
-    
-      <!-- container perfil-->
-      <div class="profile-container">
-        <a class="profile-box">
-          <img src="img/user-1.png" alt="Avatar" />
-        </a>
-      </header>
-    </header>
-    <!--Layout-->
-  </body>
+     </header> 
+     <!-- contenido central de linkedin -->
+     <div class="linkedin__content">
+         <!-- menus laterales -->
+         <aside class="content__sidebar-left">
+  
+         </aside>
+         <aside class="content__sidebar-right">
+  
+         </aside>
+         <!-- barra central -->
+          <main class="content__main">
+  
+          </main>
+
+     </div>
+
+  </div>
+</body>
 </html>

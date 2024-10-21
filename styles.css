@@ -1,131 +1,123 @@
-@import url(Properties.css);
+@import url(css/Properties.css);
+@import url(css/Head.css);
+@import url(css/Header.css);
 
-* {
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
+.linkedin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.linkedin__content{
   display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 56px 1fr;
-  grid-template-areas:
-    "header header"
-    "sidebar container";
+  grid-template-columns: 280px 1fr 280px;
+  grid-template-rows: auto;
+  grid-template-areas: 'sidebar-left' 'main' 'sidebar-rigth';
   height: 100vh;
-  background-color: rgb(228, 230, 230);
+  gap: 15px;
+  margin: 0 auto;
+  padding-top: 72px;
 }
 
-.header {
-  grid-area: header;
-  position: fixed;
-  top: 0;
-  left: 0;
-  gap: 6;
-  background-color: var(--Blanco);
+.boton{
+  display: flex;
+  width: 41px;
+  height: 41px;
+  min-width: 41px;
+  background-color: var(--Gris);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color_blanco);
+  justify-content: center;
+  align-items: center;
+  border: var(--gris_bordes);
+}
+.boton:hover{
+  background-color: var(--gris_medio);
+  transition: var(--transicion);
+}
+.linkedin__header{
+  background-color: var(--color_blanco);
   width: 100%;
-  height: 56px;
+  color: var(--color_negro);
   display: flex;
   justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  gap: 25px;
+  box-shadow: 0 0 0 #000;
 }
-
-.logo-container {
+.header__logo-search{
   display: flex;
   align-items: center;
-  gap: 6px;
+  height: 52px;
+  padding-left: 10px;
+  gap:10px;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  position: relative;
-  cursor: pointer;
+.logo{
+  width: 35px;
+  height: 35px;
+  padding: 0 5px;
 }
-
-.logo-img {
-  position: relative;
-  height: 25px;
-  width: 30px;
-}
-
-.Search {
-  min-width: 60px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 20;
-  background-color: var(--Gris);
-  outline: none;
+div a.boton--menu{
+  background-color: var(--color_negro);
   border: none;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-}
-
-.search-container {
+} 
+.barra-search{
   display: flex;
   align-items: center;
-  gap: 6;
-  flex: 0 1 685px;
+  gap: 7px;
+  flex:0 1 685px;
 }
-
-.search-container form {
+.barra-icono{
   position: relative;
-  width: 40%;
+  width: 100%;
   display: flex;
 }
-
-.search-container input {
-  height: 40px;
-  display: flex;
-  align-items: center;
+.header__busquedas .barra-busqueda{
+  height: 41px;
   width: 100%;
-  background-color: var(--Blanco);
-  border: 1px solid var(--Negro);
-  color: var(--Blanco);
+  background-color: var(--gris_alto);
+  color: var(--color_blanco);
   padding: 12px;
   outline: none;
-  font-size: 1rem;
+  border:var(--gris_bordes);
   border-radius: 10px 0 0 10px;
 }
-
-.search-container button {
-  width: 40px;
+form button.boton--lupa {
   min-width: 40px;
-  height: 40px;
-  color: var(--Blanco);
-  border-radius: 0px 10px 10px 0px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: 0.8s;
+  background-color: var(--gris_medio);
+  border-radius: 0 10px 10px 0;
+}
+.boton--lupa:hover{
+  background-color: var(--gris_alto);
+}
+.header__perfil{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 25px;
+
+}
+.header__perfil>.img--perfil{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  background-color: var(--color_blanco);
+  border-radius: 50%;
 }
 
-.search-container button:hover {
-  background-color: var(--Gris);
-}
-
-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-a {
-  text-decoration: none;
-  color: var(--Gris);
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  padding: 0 10px;
+.img--perfil:hover{
+  background-color: var(--gris_medio);
+  transition: var(--transicion);
 }
