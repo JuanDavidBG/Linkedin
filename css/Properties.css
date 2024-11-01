@@ -1,8 +1,11 @@
 :root {
-  --Blanco: #f4f2ee;
+  --Blanco: #ffffff;
   --Gris: #5f5f5f;
   --Azul: rgb(178, 242, 242);
   --Negro: #000000;
+  --Verde: #41db51;
+  --Crema:#f4f2ee;
+  --Azuloscuro: #2874b1;
 }
 
 ::-webkit-scrollbar{
